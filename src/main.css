@@ -58,6 +58,13 @@ h6 {
 }
 
 /* main style */
+@font-face {
+    font-family: norsebold;
+    src: url("font/Norse-Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
   display: flex;
   height: 100vh;
@@ -76,8 +83,13 @@ body {
 }
 
 .page-title {
+    font-family: norsebold;
+    font-size: 8em;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 }
 
 .page-title img {
@@ -85,7 +97,12 @@ body {
     width: auto;
 }
 
-.banner a {
+.credit {   
+    padding: 0.5em;
+    text-align: center;
+}
+
+.credit a {
     color: inherit;
 }
 
