@@ -30,31 +30,43 @@
         Signup <i>now</i> to get started.
       </h2>
       <h2>You know you want to</h2>
-      <form action="">
-        <h2>Let's do this!</h2>
+      <form action="get">
         <div class="form-input">
-          <fieldset>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" />
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" />
+          <h2>Let's do this!</h2>
+          <fieldset class="form-row">
+            <div class="text-input">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="text-input">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
           </fieldset>
-          <fieldset>
-            <label for="mail">EMAIL</label>
-            <input type="email" id="mail" name="mail" />
-            <label for="phone">PHONE NUMBER</label
-            ><input type="tel" id="phone" name="phone" />
+          <fieldset class="form-row">
+            <div class="text-input">
+              <label for="mail">EMAIL</label>
+              <input type="email" id="mail" name="mail" />
+            </div>
+            <div class="text-input">
+              <label for="phone">PHONE NUMBER</label
+              ><input type="tel" id="phone" name="phone" />
+            </div>
           </fieldset>
-          <fieldset>
-            <lavel for="pwd">PASSWORD</lavel>
-            <input type="password" id="pwd" name="pwd" />
-            <lavel for="pwd-conf">CONFIRM PASSWORD</lavel>
-            <input type="password" id="pwd-conf" name="pwd-conf" />
+          <fieldset class="form-row">
+            <div class="text-input">
+              <label for="pwd">PASSWORD</label>
+              <input type="password" id="pwd" name="pwd" />
+            </div>
+            <div class="text-input">
+              <label for="pwd-conf">CONFIRM PASSWORD</label>
+              <input type="password" id="pwd-conf" name="pwd-conf" />
+            </div>
           </fieldset>
         </div>
         <button type="submit">Create Account</button>
       </form>
-      <div>
+      <div class="login">
         Already have an account?
         <a href="">Log in</a>
       </div>

@@ -59,10 +59,14 @@ h6 {
 
 /* main style */
 @font-face {
-    font-family: norsebold;
-    src: url("font/Norse-Bold.otf");
-    font-weight: 700;
-    font-style: normal;
+  font-family: norsebold;
+  src: url("font/Norse-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -72,8 +76,8 @@ body {
 
 .banner {
   --bg: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
-  
-  flex: 2;
+
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -83,40 +87,90 @@ body {
 }
 
 .page-title {
-    font-family: norsebold;
-    font-size: 8em;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
+  font-family: norsebold;
+  font-size: 8rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .page-title img {
-    height: 160px;
-    width: auto;
+  height: 160px;
+  width: auto;
 }
 
-.credit {   
-    padding: 0.5em;
-    text-align: center;
+.credit {
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .credit a {
-    color: inherit;
+  color: inherit;
 }
 
 .main-content {
-  flex: 3;
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1em;
+  background-color: #f9fafb;
+  gap: 0.5rem;
 }
 
 .main-content h2 {
-  padding: 0 1.5em;
+  padding: 0 4rem;
 }
 
 .form-input {
+  background-color: white;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form-input h2 {
+  padding: 0;
+}
+
+form input {
+  padding: 0.25rem 0.5rem;
+  width: 35ch;
+}
+
+form input:invalid {
+  border: solid #d55c5f;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+form button {
+  margin: 2rem 4rem;
+  padding: 0.5rem 3rem;
+  background-color: #596d48;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.form-row {
+  border: none;
+  display: flex;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  padding-left: 4rem;
+}
+
+.login a {
+  color: #596d48;
 }
