@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='src/main.js'></script>
-</head>
-<body>
-    <div class="banner"></div>
-    <div class="main-content"></div>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="src/main.js"></script>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="page-title">
+        <img src="./images/odin-lined.png" alt="odin-logo" />
+        Odin
+      </div>
+      <span
+        >Photo by
+        <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+          >Unsplash</a
+        ></span
+      >
+    </div>
+    <div class="main-content">
+      <h2>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. <br />
+        Signup now to get started.
+      </h2>
+      <h2>You know you want to</h2>
+      <form action="">
+        <h2>Let's do this!</h2>
+        <div class="form-input">
+          <fieldset>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" />
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" />
+          </fieldset>
+          <fieldset>
+            <label for="mail">EMAIL</label>
+            <input type="email" id="mail" name="mail" />
+            <label for="phone">PHONE NUMBER</label
+            ><input type="tel" id="phone" name="phone" />
+          </fieldset>
+          <fieldset>
+            <lavel for="pwd">PASSWORD</lavel>
+            <input type="password" id="pwd" name="pwd" />
+            <lavel for="pwd-conf">CONFIRM PASSWORD</lavel>
+            <input type="password" id="pwd-conf" name="pwd-conf" />
+          </fieldset>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
+      <div>
+        Already have an account?
+        <a href="">Log in</a>
+      </div>
+    </div>
+  </body>
 </html>
